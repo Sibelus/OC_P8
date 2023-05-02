@@ -1,15 +1,317 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tourGuide.TestPerformance" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-20T07:38:19" hostname="AHO" time="56.713">
+<testsuite name="tourGuide.TestPerformance" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-02T10:27:18" hostname="AHO" time="8.455">
   <properties/>
-  <testcase name="highVolumeGetRewards" classname="tourGuide.TestPerformance" time="56.713"/>
-  <system-out><![CDATA[09:38:19.652 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
-09:38:19.656 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
-09:38:19.721 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 100 internal test users.
-09:38:19.721 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
-09:38:19.737 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 100 users.
-highVolumeGetRewards: Time Elapsed: 56 seconds.
+  <testcase name="highVolumeTrackLocation" classname="tourGuide.TestPerformance" time="8.455"/>
+  <system-out><![CDATA[12:27:18.398 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+12:27:18.404 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+12:27:18.464 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 100 internal test users.
+12:27:18.464 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+12:27:18.484 [pool-2-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 100 users.
+12:27:18.488 [pool-1-thread-1] DEBUG tourGuide.service.TourGuideService - Test: fab9510e-c238-406a-989c-d91c2dd253ad
+12:27:18.489 [pool-1-thread-2] DEBUG tourGuide.service.TourGuideService - Test: 5626d64c-a8c0-4a96-bf36-10c4efe22383
+12:27:18.490 [pool-1-thread-4] DEBUG tourGuide.service.TourGuideService - Test: 1388c265-58fe-4d07-89f0-e410c9a986f5
+12:27:18.489 [pool-1-thread-3] DEBUG tourGuide.service.TourGuideService - Test: 2ba4e929-17e6-4237-bb9c-272506755b79
+12:27:18.490 [pool-1-thread-5] DEBUG tourGuide.service.TourGuideService - Test: 9633b382-d203-4dc4-a45c-f5d4271e0e53
+12:27:18.492 [pool-1-thread-6] DEBUG tourGuide.service.TourGuideService - Test: cbc6fb5f-b1a7-499a-98b2-baaa09bb669e
+12:27:18.492 [pool-1-thread-7] DEBUG tourGuide.service.TourGuideService - Test: 6eaa2483-93f9-4bb5-a397-eebba34f168c
+12:27:18.493 [pool-1-thread-8] DEBUG tourGuide.service.TourGuideService - Test: 71e88ceb-73f5-4aa4-8ee7-19ec9d709990
+12:27:18.493 [pool-1-thread-9] DEBUG tourGuide.service.TourGuideService - Test: f2c20f5d-abb4-452d-bb1d-7b408917699f
+12:27:18.494 [pool-1-thread-10] DEBUG tourGuide.service.TourGuideService - Test: 1f04780e-0b42-4708-9de5-e6bb31b3a84d
+12:27:18.494 [pool-1-thread-11] DEBUG tourGuide.service.TourGuideService - Test: c0980435-edd0-4ae2-8f85-b5053a5dac78
+12:27:18.495 [pool-1-thread-12] DEBUG tourGuide.service.TourGuideService - Test: 05acd5a5-640c-4792-8240-4af1e176453b
+12:27:18.496 [pool-1-thread-13] DEBUG tourGuide.service.TourGuideService - Test: 03982c2b-c4f2-4bfb-929b-127e29d61bf3
+12:27:18.496 [pool-1-thread-14] DEBUG tourGuide.service.TourGuideService - Test: fbec65a1-d862-4217-9266-f29bb47cf503
+12:27:18.497 [pool-1-thread-15] DEBUG tourGuide.service.TourGuideService - Test: b941f72b-6e49-4b8e-9350-e63f6dc0e974
+12:27:18.498 [pool-1-thread-16] DEBUG tourGuide.service.TourGuideService - Test: 17ba07d5-128a-4e54-9d36-0f5fcf222813
+12:27:18.498 [pool-1-thread-17] DEBUG tourGuide.service.TourGuideService - Test: c3f1bee2-ccc0-4765-b544-0771cd95bbd5
+12:27:18.499 [pool-1-thread-18] DEBUG tourGuide.service.TourGuideService - Test: 20dfd1c1-2c86-4bae-9bb0-fdfc08f8d698
+12:27:18.504 [pool-1-thread-19] DEBUG tourGuide.service.TourGuideService - Test: a268e0e5-a335-46ac-a331-bb0ad53e8c4e
+12:27:18.504 [pool-1-thread-21] DEBUG tourGuide.service.TourGuideService - Test: 83bf7ccf-6b1b-4db1-ad24-b160b6952118
+12:27:18.504 [pool-1-thread-20] DEBUG tourGuide.service.TourGuideService - Test: e8b05f3c-45d2-43fe-86af-40b300710e5f
+12:27:18.504 [pool-1-thread-22] DEBUG tourGuide.service.TourGuideService - Test: f0a40cca-25a9-4752-993f-79f125f08367
+12:27:18.505 [pool-1-thread-23] DEBUG tourGuide.service.TourGuideService - Test: 9bd50db3-bc7b-4376-bf71-9bb18be33df4
+12:27:18.505 [pool-1-thread-24] DEBUG tourGuide.service.TourGuideService - Test: 23c8290d-ebaf-477d-a20c-61c7a974aa11
+12:27:18.505 [pool-1-thread-25] DEBUG tourGuide.service.TourGuideService - Test: 7ce5d1d7-9fbc-404e-baf2-316a6a8f37ef
+12:27:18.505 [pool-1-thread-28] DEBUG tourGuide.service.TourGuideService - Test: 3c260fad-b28d-4d9c-b7f5-52838b76f34b
+12:27:18.505 [pool-1-thread-27] DEBUG tourGuide.service.TourGuideService - Test: 0b2bee20-0d5a-4298-99b0-9561864e0cd1
+12:27:18.505 [pool-1-thread-29] DEBUG tourGuide.service.TourGuideService - Test: 7514781d-0d28-4028-a0d5-7305608198b9
+12:27:18.506 [pool-1-thread-30] DEBUG tourGuide.service.TourGuideService - Test: e9d15055-3db1-4d4b-9770-b369f79a44d7
+12:27:18.506 [pool-1-thread-26] DEBUG tourGuide.service.TourGuideService - Test: 470f4e25-60a9-4986-a363-c0834d808762
+12:27:18.506 [pool-1-thread-42] DEBUG tourGuide.service.TourGuideService - Test: b6ec537c-3a70-4be0-98dc-20fd875d4c2c
+12:27:18.506 [pool-1-thread-33] DEBUG tourGuide.service.TourGuideService - Test: 28d2b6a6-4496-4b89-bfc8-4f7e42a6034a
+12:27:18.506 [pool-1-thread-32] DEBUG tourGuide.service.TourGuideService - Test: 4e51447a-b214-40ce-b23d-45eba435fb32
+12:27:18.506 [pool-1-thread-36] DEBUG tourGuide.service.TourGuideService - Test: 5e80b857-711c-4c40-ab55-2d7d0e2be6cd
+12:27:18.506 [pool-1-thread-35] DEBUG tourGuide.service.TourGuideService - Test: 307c40e1-8e62-44bc-a425-3e74bceea342
+12:27:18.507 [pool-1-thread-40] DEBUG tourGuide.service.TourGuideService - Test: c1adc9ed-befd-4d67-bcfe-e9a3d9617eff
+12:27:18.506 [pool-1-thread-34] DEBUG tourGuide.service.TourGuideService - Test: 62f24c02-757c-4da1-9843-9b816102f18d
+12:27:18.507 [pool-1-thread-41] DEBUG tourGuide.service.TourGuideService - Test: 1e8450f2-2aae-476d-a9b9-5cf89fc1b641
+12:27:18.507 [pool-1-thread-39] DEBUG tourGuide.service.TourGuideService - Test: 5e970783-95b9-4b80-aeda-ce5d8b488076
+12:27:18.507 [pool-1-thread-31] DEBUG tourGuide.service.TourGuideService - Test: fa0fcd83-2038-4e61-87ad-ff5e181585d6
+12:27:18.507 [pool-1-thread-38] DEBUG tourGuide.service.TourGuideService - Test: a4f59a4c-62f4-418f-9997-ded71bf2f60d
+12:27:18.507 [pool-1-thread-63] DEBUG tourGuide.service.TourGuideService - Test: e998da72-27ea-47a8-bbd2-676f0781d6af
+12:27:18.507 [pool-1-thread-53] DEBUG tourGuide.service.TourGuideService - Test: a5ecc7c4-ba54-4d3d-a39d-7d9255349aae
+12:27:18.507 [pool-1-thread-43] DEBUG tourGuide.service.TourGuideService - Test: 899990d4-bf19-44c7-a777-22e25935326d
+12:27:18.507 [pool-1-thread-48] DEBUG tourGuide.service.TourGuideService - Test: c0c9ac62-2c80-4102-bb49-0d75689ddb9e
+12:27:18.507 [pool-1-thread-45] DEBUG tourGuide.service.TourGuideService - Test: 97e0395f-fad4-4938-9268-457f1bce0b8e
+12:27:18.508 [pool-1-thread-51] DEBUG tourGuide.service.TourGuideService - Test: 32e407dd-7a47-4d19-a861-0d8dad418dca
+12:27:18.507 [pool-1-thread-46] DEBUG tourGuide.service.TourGuideService - Test: ef06d4e0-be11-4855-90cd-c39e33bff1dd
+12:27:18.507 [pool-1-thread-47] DEBUG tourGuide.service.TourGuideService - Test: be3e6017-1ff0-4fb7-b32d-00a4c4e7ccc6
+12:27:18.508 [pool-1-thread-56] DEBUG tourGuide.service.TourGuideService - Test: d5749899-fbf3-4f1e-95eb-09f4db48f481
+12:27:18.507 [pool-1-thread-49] DEBUG tourGuide.service.TourGuideService - Test: 39136f59-3914-4c01-b8d5-0cb0096d4aa5
+12:27:18.508 [pool-1-thread-70] DEBUG tourGuide.service.TourGuideService - Test: b7ae6d23-f6fb-4863-8a24-e0cff5546b65
+12:27:18.508 [pool-1-thread-61] DEBUG tourGuide.service.TourGuideService - Test: 3603e546-ffc6-4fbd-a631-3b18f644bcb0
+12:27:18.508 [pool-1-thread-52] DEBUG tourGuide.service.TourGuideService - Test: 32ab23f1-c7b6-4b58-99b2-6d5d3b76017b
+12:27:18.509 [pool-1-thread-64] DEBUG tourGuide.service.TourGuideService - Test: 053a3893-2f0f-4c08-843a-9d89a15025a7
+12:27:18.508 [pool-1-thread-54] DEBUG tourGuide.service.TourGuideService - Test: e9625fcb-ca85-4485-be05-92fc718abd1e
+12:27:18.509 [pool-1-thread-68] DEBUG tourGuide.service.TourGuideService - Test: 43f0637c-63a5-49ef-a58a-e272d417b0d9
+12:27:18.508 [pool-1-thread-37] DEBUG tourGuide.service.TourGuideService - Test: eb9cbd80-139f-48cb-9c35-f94db6b4cfe7
+12:27:18.508 [pool-1-thread-77] DEBUG tourGuide.service.TourGuideService - Test: 403762a3-2002-46fc-a8bf-c946f47e12f4
+12:27:18.508 [pool-1-thread-57] DEBUG tourGuide.service.TourGuideService - Test: ebfe3344-f16f-4e27-866f-af21c77a26c9
+12:27:18.508 [pool-1-thread-81] DEBUG tourGuide.service.TourGuideService - Test: 7c101621-1cf3-41cd-b9e9-136285af1e4f
+12:27:18.509 [pool-1-thread-73] DEBUG tourGuide.service.TourGuideService - Test: 415f308a-d2c0-4366-bda7-e3b613611bb4
+12:27:18.508 [pool-1-thread-59] DEBUG tourGuide.service.TourGuideService - Test: a772c24b-f6c1-4a9e-bd60-311911abda24
+12:27:18.508 [pool-1-thread-62] DEBUG tourGuide.service.TourGuideService - Test: 8117c3c8-39d7-487c-88c6-30ceb4dd43ff
+12:27:18.510 [pool-1-thread-55] DEBUG tourGuide.service.TourGuideService - Test: c8ff9fe7-6d23-4a30-8cb1-29e9b5116005
+12:27:18.508 [pool-1-thread-60] DEBUG tourGuide.service.TourGuideService - Test: f6ab49b9-9d3e-4347-8e2e-b4076b54eb06
+12:27:18.508 [pool-1-thread-44] DEBUG tourGuide.service.TourGuideService - Test: fef22e1a-9cb7-4ea3-9b02-6a43fc31bb7b
+12:27:18.509 [pool-1-thread-89] DEBUG tourGuide.service.TourGuideService - Test: 51deaccd-41f9-43ae-ba16-78c385fca3f3
+12:27:18.510 [pool-1-thread-82] DEBUG tourGuide.service.TourGuideService - Test: 5cbaa911-0f7f-48fd-ba16-a75e25c35007
+12:27:18.509 [pool-1-thread-66] DEBUG tourGuide.service.TourGuideService - Test: f953b68d-1ace-404f-be11-12d846ded231
+12:27:18.509 [pool-1-thread-67] DEBUG tourGuide.service.TourGuideService - Test: 87296cd1-68fa-4f35-b678-af1c2b865dbf
+12:27:18.509 [pool-1-thread-69] DEBUG tourGuide.service.TourGuideService - Test: ddb4df4d-7e9e-4248-8c8e-df83fee83780
+12:27:18.511 [pool-1-thread-85] DEBUG tourGuide.service.TourGuideService - Test: fb8fbf64-92a3-4890-848b-6995ad8ebf1b
+12:27:18.509 [pool-1-thread-71] DEBUG tourGuide.service.TourGuideService - Test: 92666122-51ad-44c1-915c-d090f420fcd2
+12:27:18.509 [pool-2-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+12:27:18.509 [pool-1-thread-95] DEBUG tourGuide.service.TourGuideService - Test: c62f2cce-9e18-484d-ba4a-bec5dd2ccd42
+12:27:18.509 [pool-1-thread-72] DEBUG tourGuide.service.TourGuideService - Test: d6aa1672-1c7b-41be-a87b-40cbbc2e8c4b
+12:27:18.509 [pool-1-thread-74] DEBUG tourGuide.service.TourGuideService - Test: 73783231-9bfe-451f-8bc2-89fb6e9c0dcf
+12:27:18.509 [pool-1-thread-75] DEBUG tourGuide.service.TourGuideService - Test: 5c971240-19c5-4e87-bcf2-2f0cbff5f97c
+12:27:18.512 [pool-1-thread-65] DEBUG tourGuide.service.TourGuideService - Test: 00bd086f-d479-4be0-8d5e-2e8ef0f17ef2
+12:27:18.510 [pool-1-thread-76] DEBUG tourGuide.service.TourGuideService - Test: 2353c260-d216-42ee-be4f-ea6e7e01e92f
+12:27:18.510 [pool-1-thread-78] DEBUG tourGuide.service.TourGuideService - Test: ef77465d-191e-42f9-9d8e-3162c11f9b7c
+12:27:18.512 [pool-1-thread-91] DEBUG tourGuide.service.TourGuideService - Test: 3d67b7a3-4f70-443e-bca0-4bcbdd132b6c
+12:27:18.510 [pool-1-thread-79] DEBUG tourGuide.service.TourGuideService - Test: 3b77866c-ced8-49ec-8a42-399b2cf51f95
+12:27:18.512 [pool-1-thread-92] DEBUG tourGuide.service.TourGuideService - Test: 4cb7ed85-68df-40ad-93c7-545ffcb72216
+12:27:18.512 [pool-1-thread-93] DEBUG tourGuide.service.TourGuideService - Test: bbb4b0e0-54c1-4310-a455-b8cac1f2f8fa
+12:27:18.510 [pool-1-thread-58] DEBUG tourGuide.service.TourGuideService - Test: fc2a2f4b-e48d-45a4-9ee4-85212841b6f6
+12:27:18.510 [pool-1-thread-80] DEBUG tourGuide.service.TourGuideService - Test: af825e2d-310c-47c9-8156-139b125c61aa
+12:27:18.512 [pool-1-thread-96] DEBUG tourGuide.service.TourGuideService - Test: a30e83a7-9f57-4b00-b962-fc03888b08d6
+12:27:18.510 [pool-1-thread-83] DEBUG tourGuide.service.TourGuideService - Test: 05c7b710-53b3-428b-8cb0-fe4f96ad7739
+12:27:18.510 [pool-1-thread-84] DEBUG tourGuide.service.TourGuideService - Test: 2a996871-5c16-4b62-9ecf-61a1279eace8
+12:27:18.511 [pool-1-thread-86] DEBUG tourGuide.service.TourGuideService - Test: e869a036-a950-4167-a533-e6c561d8990e
+12:27:18.513 [pool-1-thread-97] DEBUG tourGuide.service.TourGuideService - Test: 8f554a2b-f633-4a6b-8d35-aa21c9ec09aa
+12:27:18.511 [pool-2-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+12:27:18.513 [pool-1-thread-98] DEBUG tourGuide.service.TourGuideService - Test: b740f3f8-e1a7-470b-9be8-49b82cc78770
+12:27:18.512 [pool-1-thread-87] DEBUG tourGuide.service.TourGuideService - Test: c061b5fb-0794-4d51-a4f0-5dc045888c73
+12:27:18.512 [pool-1-thread-90] DEBUG tourGuide.service.TourGuideService - Test: a8aa0145-94b4-4a06-a44a-a48b1b6cb9ab
+12:27:18.513 [pool-1-thread-100] DEBUG tourGuide.service.TourGuideService - Test: 810887dd-381d-4daa-a4ab-cd26f371b19f
+12:27:18.512 [pool-1-thread-88] DEBUG tourGuide.service.TourGuideService - Test: 56416be7-b84c-41f1-88d3-92d4f0044d18
+12:27:18.512 [pool-1-thread-94] DEBUG tourGuide.service.TourGuideService - Test: 8b0ea87d-dae5-4ff8-998f-4abbc81c94bc
+12:27:18.512 [pool-1-thread-50] DEBUG tourGuide.service.TourGuideService - Test: f97e2d0d-516e-4a64-8617-44b678664e29
+12:27:18.513 [pool-1-thread-99] DEBUG tourGuide.service.TourGuideService - Test: 085b7868-58f1-4754-86b8-236ded05ebd7
+12:27:18.523 [pool-1-thread-2] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 5626d64c-a8c0-4a96-bf36-10c4efe22383
+12:27:18.523 [pool-1-thread-2] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 5626d64c-a8c0-4a96-bf36-10c4efe22383
+12:27:18.535 [pool-1-thread-9] DEBUG tourGuide.service.TourGuideService - Add visited location to user: f2c20f5d-abb4-452d-bb1d-7b408917699f
+12:27:18.535 [pool-1-thread-9] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: f2c20f5d-abb4-452d-bb1d-7b408917699f
+12:27:18.537 [pool-1-thread-8] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 71e88ceb-73f5-4aa4-8ee7-19ec9d709990
+12:27:18.537 [pool-1-thread-8] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 71e88ceb-73f5-4aa4-8ee7-19ec9d709990
+12:27:18.539 [pool-1-thread-26] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 470f4e25-60a9-4986-a363-c0834d808762
+12:27:18.539 [pool-1-thread-26] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 470f4e25-60a9-4986-a363-c0834d808762
+12:27:18.540 [pool-1-thread-59] DEBUG tourGuide.service.TourGuideService - Add visited location to user: a772c24b-f6c1-4a9e-bd60-311911abda24
+12:27:18.540 [pool-1-thread-59] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: a772c24b-f6c1-4a9e-bd60-311911abda24
+12:27:18.542 [pool-1-thread-25] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 7ce5d1d7-9fbc-404e-baf2-316a6a8f37ef
+12:27:18.542 [pool-1-thread-53] DEBUG tourGuide.service.TourGuideService - Add visited location to user: a5ecc7c4-ba54-4d3d-a39d-7d9255349aae
+12:27:18.542 [pool-1-thread-25] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 7ce5d1d7-9fbc-404e-baf2-316a6a8f37ef
+12:27:18.542 [pool-1-thread-53] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: a5ecc7c4-ba54-4d3d-a39d-7d9255349aae
+12:27:18.544 [pool-1-thread-93] DEBUG tourGuide.service.TourGuideService - Add visited location to user: bbb4b0e0-54c1-4310-a455-b8cac1f2f8fa
+12:27:18.544 [pool-1-thread-93] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: bbb4b0e0-54c1-4310-a455-b8cac1f2f8fa
+12:27:18.545 [pool-1-thread-17] DEBUG tourGuide.service.TourGuideService - Add visited location to user: c3f1bee2-ccc0-4765-b544-0771cd95bbd5
+12:27:18.545 [pool-1-thread-68] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 43f0637c-63a5-49ef-a58a-e272d417b0d9
+12:27:18.545 [pool-1-thread-17] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: c3f1bee2-ccc0-4765-b544-0771cd95bbd5
+12:27:18.545 [pool-1-thread-68] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 43f0637c-63a5-49ef-a58a-e272d417b0d9
+12:27:18.545 [pool-1-thread-41] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 1e8450f2-2aae-476d-a9b9-5cf89fc1b641
+12:27:18.545 [pool-1-thread-41] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 1e8450f2-2aae-476d-a9b9-5cf89fc1b641
+12:27:18.546 [pool-1-thread-64] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 053a3893-2f0f-4c08-843a-9d89a15025a7
+12:27:18.546 [pool-1-thread-64] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 053a3893-2f0f-4c08-843a-9d89a15025a7
+12:27:18.548 [pool-1-thread-96] DEBUG tourGuide.service.TourGuideService - Add visited location to user: a30e83a7-9f57-4b00-b962-fc03888b08d6
+12:27:18.548 [pool-1-thread-96] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: a30e83a7-9f57-4b00-b962-fc03888b08d6
+12:27:18.549 [pool-1-thread-91] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 3d67b7a3-4f70-443e-bca0-4bcbdd132b6c
+12:27:18.549 [pool-1-thread-24] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 23c8290d-ebaf-477d-a20c-61c7a974aa11
+12:27:18.549 [pool-1-thread-91] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 3d67b7a3-4f70-443e-bca0-4bcbdd132b6c
+12:27:18.549 [pool-1-thread-24] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 23c8290d-ebaf-477d-a20c-61c7a974aa11
+12:27:18.550 [pool-1-thread-30] DEBUG tourGuide.service.TourGuideService - Add visited location to user: e9d15055-3db1-4d4b-9770-b369f79a44d7
+12:27:18.550 [pool-1-thread-30] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: e9d15055-3db1-4d4b-9770-b369f79a44d7
+12:27:18.551 [pool-1-thread-77] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 403762a3-2002-46fc-a8bf-c946f47e12f4
+12:27:18.551 [pool-1-thread-77] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 403762a3-2002-46fc-a8bf-c946f47e12f4
+12:27:18.552 [pool-1-thread-73] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 415f308a-d2c0-4366-bda7-e3b613611bb4
+12:27:18.552 [pool-1-thread-29] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 7514781d-0d28-4028-a0d5-7305608198b9
+12:27:18.552 [pool-1-thread-15] DEBUG tourGuide.service.TourGuideService - Add visited location to user: b941f72b-6e49-4b8e-9350-e63f6dc0e974
+12:27:18.552 [pool-1-thread-29] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 7514781d-0d28-4028-a0d5-7305608198b9
+12:27:18.552 [pool-1-thread-15] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: b941f72b-6e49-4b8e-9350-e63f6dc0e974
+12:27:18.552 [pool-1-thread-73] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 415f308a-d2c0-4366-bda7-e3b613611bb4
+12:27:18.552 [pool-1-thread-4] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 1388c265-58fe-4d07-89f0-e410c9a986f5
+12:27:18.552 [pool-1-thread-88] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 56416be7-b84c-41f1-88d3-92d4f0044d18
+12:27:18.552 [pool-1-thread-4] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 1388c265-58fe-4d07-89f0-e410c9a986f5
+12:27:18.552 [pool-1-thread-88] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 56416be7-b84c-41f1-88d3-92d4f0044d18
+12:27:18.554 [pool-1-thread-14] DEBUG tourGuide.service.TourGuideService - Add visited location to user: fbec65a1-d862-4217-9266-f29bb47cf503
+12:27:18.554 [pool-1-thread-14] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: fbec65a1-d862-4217-9266-f29bb47cf503
+12:27:18.555 [pool-1-thread-50] DEBUG tourGuide.service.TourGuideService - Add visited location to user: f97e2d0d-516e-4a64-8617-44b678664e29
+12:27:18.555 [pool-1-thread-28] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 3c260fad-b28d-4d9c-b7f5-52838b76f34b
+12:27:18.555 [pool-1-thread-50] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: f97e2d0d-516e-4a64-8617-44b678664e29
+12:27:18.555 [pool-1-thread-28] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 3c260fad-b28d-4d9c-b7f5-52838b76f34b
+12:27:18.556 [pool-1-thread-71] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 92666122-51ad-44c1-915c-d090f420fcd2
+12:27:18.556 [pool-1-thread-69] DEBUG tourGuide.service.TourGuideService - Add visited location to user: ddb4df4d-7e9e-4248-8c8e-df83fee83780
+12:27:18.556 [pool-1-thread-71] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 92666122-51ad-44c1-915c-d090f420fcd2
+12:27:18.556 [pool-1-thread-69] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: ddb4df4d-7e9e-4248-8c8e-df83fee83780
+12:27:18.558 [pool-1-thread-45] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 97e0395f-fad4-4938-9268-457f1bce0b8e
+12:27:18.558 [pool-1-thread-12] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 05acd5a5-640c-4792-8240-4af1e176453b
+12:27:18.558 [pool-1-thread-45] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 97e0395f-fad4-4938-9268-457f1bce0b8e
+12:27:18.558 [pool-1-thread-12] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 05acd5a5-640c-4792-8240-4af1e176453b
+12:27:18.559 [pool-1-thread-11] DEBUG tourGuide.service.TourGuideService - Add visited location to user: c0980435-edd0-4ae2-8f85-b5053a5dac78
+12:27:18.559 [pool-1-thread-11] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: c0980435-edd0-4ae2-8f85-b5053a5dac78
+12:27:18.560 [pool-1-thread-33] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 28d2b6a6-4496-4b89-bfc8-4f7e42a6034a
+12:27:18.560 [pool-1-thread-85] DEBUG tourGuide.service.TourGuideService - Add visited location to user: fb8fbf64-92a3-4890-848b-6995ad8ebf1b
+12:27:18.560 [pool-1-thread-94] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 8b0ea87d-dae5-4ff8-998f-4abbc81c94bc
+12:27:18.560 [pool-1-thread-75] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 5c971240-19c5-4e87-bcf2-2f0cbff5f97c
+12:27:18.560 [pool-1-thread-94] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 8b0ea87d-dae5-4ff8-998f-4abbc81c94bc
+12:27:18.560 [pool-1-thread-48] DEBUG tourGuide.service.TourGuideService - Add visited location to user: c0c9ac62-2c80-4102-bb49-0d75689ddb9e
+12:27:18.560 [pool-1-thread-33] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 28d2b6a6-4496-4b89-bfc8-4f7e42a6034a
+12:27:18.560 [pool-1-thread-48] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: c0c9ac62-2c80-4102-bb49-0d75689ddb9e
+12:27:18.560 [pool-1-thread-85] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: fb8fbf64-92a3-4890-848b-6995ad8ebf1b
+12:27:18.560 [pool-1-thread-75] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 5c971240-19c5-4e87-bcf2-2f0cbff5f97c
+12:27:18.562 [pool-1-thread-27] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 0b2bee20-0d5a-4298-99b0-9561864e0cd1
+12:27:18.562 [pool-1-thread-42] DEBUG tourGuide.service.TourGuideService - Add visited location to user: b6ec537c-3a70-4be0-98dc-20fd875d4c2c
+12:27:18.562 [pool-1-thread-52] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 32ab23f1-c7b6-4b58-99b2-6d5d3b76017b
+12:27:18.562 [pool-1-thread-27] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 0b2bee20-0d5a-4298-99b0-9561864e0cd1
+12:27:18.562 [pool-1-thread-52] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 32ab23f1-c7b6-4b58-99b2-6d5d3b76017b
+12:27:18.562 [pool-1-thread-42] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: b6ec537c-3a70-4be0-98dc-20fd875d4c2c
+12:27:18.563 [pool-1-thread-21] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 83bf7ccf-6b1b-4db1-ad24-b160b6952118
+12:27:18.563 [pool-1-thread-21] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 83bf7ccf-6b1b-4db1-ad24-b160b6952118
+12:27:18.565 [pool-1-thread-39] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 5e970783-95b9-4b80-aeda-ce5d8b488076
+12:27:18.565 [pool-1-thread-22] DEBUG tourGuide.service.TourGuideService - Add visited location to user: f0a40cca-25a9-4752-993f-79f125f08367
+12:27:18.565 [pool-1-thread-44] DEBUG tourGuide.service.TourGuideService - Add visited location to user: fef22e1a-9cb7-4ea3-9b02-6a43fc31bb7b
+12:27:18.565 [pool-1-thread-22] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: f0a40cca-25a9-4752-993f-79f125f08367
+12:27:18.565 [pool-1-thread-44] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: fef22e1a-9cb7-4ea3-9b02-6a43fc31bb7b
+12:27:18.565 [pool-1-thread-38] DEBUG tourGuide.service.TourGuideService - Add visited location to user: a4f59a4c-62f4-418f-9997-ded71bf2f60d
+12:27:18.565 [pool-1-thread-39] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 5e970783-95b9-4b80-aeda-ce5d8b488076
+12:27:18.565 [pool-1-thread-38] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: a4f59a4c-62f4-418f-9997-ded71bf2f60d
+12:27:18.566 [pool-1-thread-51] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 32e407dd-7a47-4d19-a861-0d8dad418dca
+12:27:18.566 [pool-1-thread-74] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 73783231-9bfe-451f-8bc2-89fb6e9c0dcf
+12:27:18.566 [pool-1-thread-6] DEBUG tourGuide.service.TourGuideService - Add visited location to user: cbc6fb5f-b1a7-499a-98b2-baaa09bb669e
+12:27:18.566 [pool-1-thread-74] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 73783231-9bfe-451f-8bc2-89fb6e9c0dcf
+12:27:18.566 [pool-1-thread-6] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: cbc6fb5f-b1a7-499a-98b2-baaa09bb669e
+12:27:18.566 [pool-1-thread-51] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 32e407dd-7a47-4d19-a861-0d8dad418dca
+12:27:18.567 [pool-1-thread-92] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 4cb7ed85-68df-40ad-93c7-545ffcb72216
+12:27:18.567 [pool-1-thread-92] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 4cb7ed85-68df-40ad-93c7-545ffcb72216
+12:27:18.569 [pool-1-thread-19] DEBUG tourGuide.service.TourGuideService - Add visited location to user: a268e0e5-a335-46ac-a331-bb0ad53e8c4e
+12:27:18.569 [pool-1-thread-34] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 62f24c02-757c-4da1-9843-9b816102f18d
+12:27:18.569 [pool-1-thread-19] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: a268e0e5-a335-46ac-a331-bb0ad53e8c4e
+12:27:18.569 [pool-1-thread-45] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 62f24c02-757c-4da1-9843-9b816102f18d
+12:27:18.570 [pool-1-thread-18] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 20dfd1c1-2c86-4bae-9bb0-fdfc08f8d698
+12:27:18.570 [pool-1-thread-18] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 20dfd1c1-2c86-4bae-9bb0-fdfc08f8d698
+12:27:18.573 [pool-1-thread-100] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 810887dd-381d-4daa-a4ab-cd26f371b19f
+12:27:18.573 [pool-1-thread-87] DEBUG tourGuide.service.TourGuideService - Add visited location to user: c061b5fb-0794-4d51-a4f0-5dc045888c73
+12:27:18.573 [pool-1-thread-3] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 2ba4e929-17e6-4237-bb9c-272506755b79
+12:27:18.573 [pool-1-thread-87] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: c061b5fb-0794-4d51-a4f0-5dc045888c73
+12:27:18.573 [pool-1-thread-3] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 2ba4e929-17e6-4237-bb9c-272506755b79
+12:27:18.573 [pool-1-thread-100] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 810887dd-381d-4daa-a4ab-cd26f371b19f
+12:27:18.574 [pool-1-thread-65] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 00bd086f-d479-4be0-8d5e-2e8ef0f17ef2
+12:27:18.574 [pool-1-thread-65] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 00bd086f-d479-4be0-8d5e-2e8ef0f17ef2
+12:27:18.575 [pool-1-thread-47] DEBUG tourGuide.service.TourGuideService - Add visited location to user: be3e6017-1ff0-4fb7-b32d-00a4c4e7ccc6
+12:27:18.575 [pool-1-thread-98] DEBUG tourGuide.service.TourGuideService - Add visited location to user: b740f3f8-e1a7-470b-9be8-49b82cc78770
+12:27:18.575 [pool-1-thread-77] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: be3e6017-1ff0-4fb7-b32d-00a4c4e7ccc6
+12:27:18.575 [pool-1-thread-98] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: b740f3f8-e1a7-470b-9be8-49b82cc78770
+12:27:18.577 [pool-1-thread-43] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 899990d4-bf19-44c7-a777-22e25935326d
+12:27:18.577 [pool-1-thread-43] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 899990d4-bf19-44c7-a777-22e25935326d
+12:27:18.578 [pool-1-thread-62] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 8117c3c8-39d7-487c-88c6-30ceb4dd43ff
+12:27:18.578 [pool-1-thread-46] DEBUG tourGuide.service.TourGuideService - Add visited location to user: ef06d4e0-be11-4855-90cd-c39e33bff1dd
+12:27:18.578 [pool-1-thread-62] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 8117c3c8-39d7-487c-88c6-30ceb4dd43ff
+12:27:18.578 [pool-1-thread-46] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: ef06d4e0-be11-4855-90cd-c39e33bff1dd
+12:27:18.579 [pool-1-thread-40] DEBUG tourGuide.service.TourGuideService - Add visited location to user: c1adc9ed-befd-4d67-bcfe-e9a3d9617eff
+12:27:18.579 [pool-1-thread-7] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 6eaa2483-93f9-4bb5-a397-eebba34f168c
+12:27:18.579 [pool-1-thread-40] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: c1adc9ed-befd-4d67-bcfe-e9a3d9617eff
+12:27:18.579 [pool-1-thread-89] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 51deaccd-41f9-43ae-ba16-78c385fca3f3
+12:27:18.579 [pool-1-thread-81] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 7c101621-1cf3-41cd-b9e9-136285af1e4f
+12:27:18.579 [pool-1-thread-7] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 6eaa2483-93f9-4bb5-a397-eebba34f168c
+12:27:18.579 [pool-1-thread-45] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 7c101621-1cf3-41cd-b9e9-136285af1e4f
+12:27:18.579 [pool-1-thread-89] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 51deaccd-41f9-43ae-ba16-78c385fca3f3
+12:27:18.580 [pool-1-thread-78] DEBUG tourGuide.service.TourGuideService - Add visited location to user: ef77465d-191e-42f9-9d8e-3162c11f9b7c
+12:27:18.580 [pool-1-thread-54] DEBUG tourGuide.service.TourGuideService - Add visited location to user: e9625fcb-ca85-4485-be05-92fc718abd1e
+12:27:18.580 [pool-1-thread-84] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 2a996871-5c16-4b62-9ecf-61a1279eace8
+12:27:18.580 [pool-1-thread-78] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: ef77465d-191e-42f9-9d8e-3162c11f9b7c
+12:27:18.580 [pool-1-thread-84] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 2a996871-5c16-4b62-9ecf-61a1279eace8
+12:27:18.580 [pool-1-thread-54] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: e9625fcb-ca85-4485-be05-92fc718abd1e
+12:27:18.582 [pool-1-thread-31] DEBUG tourGuide.service.TourGuideService - Add visited location to user: fa0fcd83-2038-4e61-87ad-ff5e181585d6
+12:27:18.582 [pool-1-thread-1] DEBUG tourGuide.service.TourGuideService - Add visited location to user: fab9510e-c238-406a-989c-d91c2dd253ad
+12:27:18.582 [pool-1-thread-31] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: fa0fcd83-2038-4e61-87ad-ff5e181585d6
+12:27:18.582 [pool-1-thread-1] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: fab9510e-c238-406a-989c-d91c2dd253ad
+12:27:18.583 [pool-1-thread-36] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 5e80b857-711c-4c40-ab55-2d7d0e2be6cd
+12:27:18.583 [pool-1-thread-57] DEBUG tourGuide.service.TourGuideService - Add visited location to user: ebfe3344-f16f-4e27-866f-af21c77a26c9
+12:27:18.583 [pool-1-thread-60] DEBUG tourGuide.service.TourGuideService - Add visited location to user: f6ab49b9-9d3e-4347-8e2e-b4076b54eb06
+12:27:18.583 [pool-1-thread-57] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: ebfe3344-f16f-4e27-866f-af21c77a26c9
+12:27:18.583 [pool-1-thread-36] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 5e80b857-711c-4c40-ab55-2d7d0e2be6cd
+12:27:18.583 [pool-1-thread-60] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: f6ab49b9-9d3e-4347-8e2e-b4076b54eb06
+12:27:18.584 [pool-1-thread-83] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 05c7b710-53b3-428b-8cb0-fe4f96ad7739
+12:27:18.584 [pool-1-thread-32] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 4e51447a-b214-40ce-b23d-45eba435fb32
+12:27:18.584 [pool-1-thread-83] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 05c7b710-53b3-428b-8cb0-fe4f96ad7739
+12:27:18.584 [pool-1-thread-32] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 4e51447a-b214-40ce-b23d-45eba435fb32
+12:27:18.585 [pool-1-thread-95] DEBUG tourGuide.service.TourGuideService - Add visited location to user: c62f2cce-9e18-484d-ba4a-bec5dd2ccd42
+12:27:18.585 [pool-1-thread-56] DEBUG tourGuide.service.TourGuideService - Add visited location to user: d5749899-fbf3-4f1e-95eb-09f4db48f481
+12:27:18.585 [pool-1-thread-80] DEBUG tourGuide.service.TourGuideService - Add visited location to user: af825e2d-310c-47c9-8156-139b125c61aa
+12:27:18.585 [pool-1-thread-71] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: c62f2cce-9e18-484d-ba4a-bec5dd2ccd42
+12:27:18.585 [pool-1-thread-80] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: af825e2d-310c-47c9-8156-139b125c61aa
+12:27:18.585 [pool-1-thread-56] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: d5749899-fbf3-4f1e-95eb-09f4db48f481
+12:27:18.587 [pool-1-thread-10] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 1f04780e-0b42-4708-9de5-e6bb31b3a84d
+12:27:18.587 [pool-1-thread-10] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 1f04780e-0b42-4708-9de5-e6bb31b3a84d
+12:27:18.588 [pool-1-thread-63] DEBUG tourGuide.service.TourGuideService - Add visited location to user: e998da72-27ea-47a8-bbd2-676f0781d6af
+12:27:18.588 [pool-1-thread-5] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 9633b382-d203-4dc4-a45c-f5d4271e0e53
+12:27:18.588 [pool-1-thread-63] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: e998da72-27ea-47a8-bbd2-676f0781d6af
+12:27:18.588 [pool-1-thread-5] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 9633b382-d203-4dc4-a45c-f5d4271e0e53
+12:27:18.590 [pool-1-thread-66] DEBUG tourGuide.service.TourGuideService - Add visited location to user: f953b68d-1ace-404f-be11-12d846ded231
+12:27:18.590 [pool-1-thread-66] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: f953b68d-1ace-404f-be11-12d846ded231
+12:27:18.591 [pool-1-thread-49] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 39136f59-3914-4c01-b8d5-0cb0096d4aa5
+12:27:18.591 [pool-1-thread-49] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 39136f59-3914-4c01-b8d5-0cb0096d4aa5
+12:27:18.592 [pool-1-thread-20] DEBUG tourGuide.service.TourGuideService - Add visited location to user: e8b05f3c-45d2-43fe-86af-40b300710e5f
+12:27:18.592 [pool-1-thread-20] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: e8b05f3c-45d2-43fe-86af-40b300710e5f
+12:27:18.594 [pool-1-thread-72] DEBUG tourGuide.service.TourGuideService - Add visited location to user: d6aa1672-1c7b-41be-a87b-40cbbc2e8c4b
+12:27:18.594 [pool-1-thread-86] DEBUG tourGuide.service.TourGuideService - Add visited location to user: e869a036-a950-4167-a533-e6c561d8990e
+12:27:18.594 [pool-1-thread-32] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: d6aa1672-1c7b-41be-a87b-40cbbc2e8c4b
+12:27:18.594 [pool-1-thread-72] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: e869a036-a950-4167-a533-e6c561d8990e
+12:27:18.596 [pool-1-thread-99] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 085b7868-58f1-4754-86b8-236ded05ebd7
+12:27:18.596 [pool-1-thread-16] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 17ba07d5-128a-4e54-9d36-0f5fcf222813
+12:27:18.596 [pool-1-thread-13] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 03982c2b-c4f2-4bfb-929b-127e29d61bf3
+12:27:18.596 [pool-1-thread-99] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 085b7868-58f1-4754-86b8-236ded05ebd7
+12:27:18.596 [pool-1-thread-13] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 03982c2b-c4f2-4bfb-929b-127e29d61bf3
+12:27:18.596 [pool-1-thread-16] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 17ba07d5-128a-4e54-9d36-0f5fcf222813
+12:27:18.597 [pool-1-thread-61] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 3603e546-ffc6-4fbd-a631-3b18f644bcb0
+12:27:18.597 [pool-1-thread-37] DEBUG tourGuide.service.TourGuideService - Add visited location to user: eb9cbd80-139f-48cb-9c35-f94db6b4cfe7
+12:27:18.597 [pool-1-thread-61] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 3603e546-ffc6-4fbd-a631-3b18f644bcb0
+12:27:18.597 [pool-1-thread-37] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: eb9cbd80-139f-48cb-9c35-f94db6b4cfe7
+12:27:18.598 [pool-1-thread-79] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 3b77866c-ced8-49ec-8a42-399b2cf51f95
+12:27:18.598 [pool-1-thread-79] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 3b77866c-ced8-49ec-8a42-399b2cf51f95
+12:27:18.600 [pool-1-thread-23] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 9bd50db3-bc7b-4376-bf71-9bb18be33df4
+12:27:18.600 [pool-1-thread-23] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 9bd50db3-bc7b-4376-bf71-9bb18be33df4
+12:27:18.601 [pool-1-thread-97] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 8f554a2b-f633-4a6b-8d35-aa21c9ec09aa
+12:27:18.601 [pool-1-thread-97] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 8f554a2b-f633-4a6b-8d35-aa21c9ec09aa
+12:27:18.602 [pool-1-thread-82] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 5cbaa911-0f7f-48fd-ba16-a75e25c35007
+12:27:18.602 [pool-1-thread-82] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 5cbaa911-0f7f-48fd-ba16-a75e25c35007
+12:27:18.602 [pool-1-thread-76] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 2353c260-d216-42ee-be4f-ea6e7e01e92f
+12:27:18.602 [pool-1-thread-76] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 2353c260-d216-42ee-be4f-ea6e7e01e92f
+12:27:18.603 [pool-1-thread-55] DEBUG tourGuide.service.TourGuideService - Add visited location to user: c8ff9fe7-6d23-4a30-8cb1-29e9b5116005
+12:27:18.603 [pool-1-thread-55] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: c8ff9fe7-6d23-4a30-8cb1-29e9b5116005
+12:27:18.604 [pool-1-thread-70] DEBUG tourGuide.service.TourGuideService - Add visited location to user: b7ae6d23-f6fb-4863-8a24-e0cff5546b65
+12:27:18.604 [pool-1-thread-70] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: b7ae6d23-f6fb-4863-8a24-e0cff5546b65
+12:27:18.605 [pool-1-thread-35] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 307c40e1-8e62-44bc-a425-3e74bceea342
+12:27:18.605 [pool-1-thread-35] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 307c40e1-8e62-44bc-a425-3e74bceea342
+12:27:18.608 [pool-1-thread-58] DEBUG tourGuide.service.TourGuideService - Add visited location to user: fc2a2f4b-e48d-45a4-9ee4-85212841b6f6
+12:27:18.608 [pool-1-thread-67] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 87296cd1-68fa-4f35-b678-af1c2b865dbf
+12:27:18.608 [pool-1-thread-58] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: fc2a2f4b-e48d-45a4-9ee4-85212841b6f6
+12:27:18.608 [pool-1-thread-67] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 87296cd1-68fa-4f35-b678-af1c2b865dbf
+12:27:18.613 [pool-1-thread-90] DEBUG tourGuide.service.TourGuideService - Add visited location to user: a8aa0145-94b4-4a06-a44a-a48b1b6cb9ab
+12:27:18.613 [pool-1-thread-90] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: a8aa0145-94b4-4a06-a44a-a48b1b6cb9ab
+highVolumeTrackLocation: Time Elapsed: 8 seconds.
 ]]></system-out>
-  <system-err><![CDATA[avr. 20, 2023 9:38:19 AM org.javamoney.moneta.DefaultMonetaryContextFactory createMonetaryContextNonNullConfig
-INFOS: Using custom MathContext: precision=256, roundingMode=HALF_EVEN
+  <system-err><![CDATA[May 02, 2023 12:27:18 PM org.javamoney.moneta.DefaultMonetaryContextFactory createMonetaryContextNonNullConfig
+INFO: Using custom MathContext: precision=256, roundingMode=HALF_EVEN
 ]]></system-err>
 </testsuite>

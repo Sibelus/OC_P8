@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.UUID;
+import java.util.concurrent.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -34,6 +35,7 @@ public class TourGuideService {
 	private final RewardsService rewardsService;
 	private final TripPricer tripPricer = new TripPricer();
 	public final Tracker tracker;
+	private final ExecutorService executorService = Executors.newFixedThreadPool(100);
 	boolean testMode = true;
 	
 	public TourGuideService(GpsUtil gpsUtil, RewardsService rewardsService) {
@@ -54,10 +56,10 @@ public class TourGuideService {
 		return user.getUserRewards();
 	}
 	
-	public VisitedLocation getUserLocation(User user) {
+	public VisitedLocation getUserLocation(User user) throws ExecutionException, InterruptedException {
 		VisitedLocation visitedLocation = (user.getVisitedLocations().size() > 0) ?
 			user.getLastVisitedLocation() :
-			trackUserLocation(user);
+			trackUserLocation(user).get();
 		return visitedLocation;
 	}
 	
@@ -82,13 +84,66 @@ public class TourGuideService {
 		user.setTripDeals(providers);
 		return providers;
 	}
-	
-	public VisitedLocation trackUserLocation(User user) {
-		VisitedLocation visitedLocation = gpsUtil.getUserLocation(user.getUserId());
-		user.addToVisitedLocations(visitedLocation);
-		rewardsService.calculateRewards(user);
-		return visitedLocation;
+
+	public CompletableFuture<VisitedLocation> trackUserLocation(User user) {
+
+		return CompletableFuture.supplyAsync(() -> {
+					logger.debug("Test: {}", user.getUserId());
+					VisitedLocation visitedLocation = gpsUtil.getUserLocation(user.getUserId());
+					logger.debug("Add visited location to user: {}", user.getUserId());
+					user.addToVisitedLocations(visitedLocation);
+					return visitedLocation;
+				}, executorService)
+				.thenApplyAsync(visitedLocationRewarded -> {
+					logger.debug("Calculate rewards for user: {}", user.getUserId());
+					rewardsService.calculateRewards(user);
+					return visitedLocationRewarded;
+				}, executorService);
+		//return visitedLocationCompletableFuture.get();
 	}
+
+
+	public void trackUserLocationAsync(User user) {
+		//CompletableFuture<Void> completableFuture = CompletableFuture.runAsync(() -> {
+			VisitedLocation visitedLocation = gpsUtil.getUserLocation(user.getUserId());
+			user.addToVisitedLocations(visitedLocation);
+			rewardsService.calculateRewards(user);
+		//}, executorService);
+	}
+	/*
+	public void trackUserLocationAsync(User user) {
+		CompletableFuture<Void> completableFuture = CompletableFuture.supplyAsync(() -> {
+			VisitedLocation visitedLocation = gpsUtil.getUserLocation(user.getUserId());
+			user.addToVisitedLocations(visitedLocation);
+			return visitedLocation;
+		}, executorService)
+				.thenApply(result -> {
+					rewardsService.calculateRewards(user);
+					return null;
+				});
+	}*/
+
+	/*
+	public VisitedLocation trackUserLocation(User user) throws ExecutionException, InterruptedException {
+		//VisitedLocation visitedLocation = gpsUtil.getUserLocation(user.getUserId());
+		//user.addToVisitedLocations(visitedLocation);
+		//rewardsService.calculateRewards(user);
+		//return visitedLocation;
+
+		CompletableFuture<VisitedLocation> visitedLocationCompletableFuture = CompletableFuture.supplyAsync(() -> {
+				logger.debug("Get the location of user: {}", user.getUserId());
+				VisitedLocation visitedLocation = gpsUtil.getUserLocation(user.getUserId());
+				logger.debug("Add visited location to user: {}", user.getUserId());
+				user.addToVisitedLocations(visitedLocation);
+				return visitedLocation;
+			}, executorService)
+				.thenApplyAsync(visitedLocationRewarded -> {
+					logger.debug("Calculate rewards for user: {}", user.getUserId());
+					rewardsService.calculateRewards(user);
+					return visitedLocationRewarded;
+				}, executorService);
+		return visitedLocationCompletableFuture.get();
+	}*/
 
 	public List<Attraction> getNearByAttractions(VisitedLocation visitedLocation) {
 		List<Attraction> nearbyAttractions = new ArrayList<>();
