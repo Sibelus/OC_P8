@@ -86,64 +86,38 @@ public class TourGuideService {
 	}
 
 	public CompletableFuture<VisitedLocation> trackUserLocation(User user) {
-
 		return CompletableFuture.supplyAsync(() -> {
-					logger.debug("Test: {}", user.getUserId());
 					VisitedLocation visitedLocation = gpsUtil.getUserLocation(user.getUserId());
-					logger.debug("Add visited location to user: {}", user.getUserId());
+					logger.debug("Get location of user: {}", user.getUserId());
 					user.addToVisitedLocations(visitedLocation);
+					logger.debug("Add visited location to user: {}", user.getUserId());
 					return visitedLocation;
 				}, executorService)
 				.thenApplyAsync(visitedLocationRewarded -> {
-					logger.debug("Calculate rewards for user: {}", user.getUserId());
 					rewardsService.calculateRewards(user);
+					logger.debug("Calculate rewards for user: {}", user.getUserId());
 					return visitedLocationRewarded;
 				}, executorService);
-		//return visitedLocationCompletableFuture.get();
 	}
 
 
 	public void trackUserLocationAsync(User user) {
-		//CompletableFuture<Void> completableFuture = CompletableFuture.runAsync(() -> {
+		CompletableFuture<Void> completableFuture = CompletableFuture.runAsync(() -> {
 			VisitedLocation visitedLocation = gpsUtil.getUserLocation(user.getUserId());
+			logger.debug("Get location of user: {}", user.getUserId());
+
 			user.addToVisitedLocations(visitedLocation);
+			logger.debug("Add visited location to user: {}", user.getUserId());
+
 			rewardsService.calculateRewards(user);
-		//}, executorService);
+			logger.debug("Calculate rewards for user: {}", user.getUserId());
+		}, executorService);
 	}
-	/*
-	public void trackUserLocationAsync(User user) {
-		CompletableFuture<Void> completableFuture = CompletableFuture.supplyAsync(() -> {
-			VisitedLocation visitedLocation = gpsUtil.getUserLocation(user.getUserId());
-			user.addToVisitedLocations(visitedLocation);
-			return visitedLocation;
-		}, executorService)
-				.thenApply(result -> {
-					rewardsService.calculateRewards(user);
-					return null;
-				});
-	}*/
 
-	/*
-	public VisitedLocation trackUserLocation(User user) throws ExecutionException, InterruptedException {
-		//VisitedLocation visitedLocation = gpsUtil.getUserLocation(user.getUserId());
-		//user.addToVisitedLocations(visitedLocation);
-		//rewardsService.calculateRewards(user);
-		//return visitedLocation;
+	public ExecutorService getExecutorService() {
+		return executorService;
+	}
 
-		CompletableFuture<VisitedLocation> visitedLocationCompletableFuture = CompletableFuture.supplyAsync(() -> {
-				logger.debug("Get the location of user: {}", user.getUserId());
-				VisitedLocation visitedLocation = gpsUtil.getUserLocation(user.getUserId());
-				logger.debug("Add visited location to user: {}", user.getUserId());
-				user.addToVisitedLocations(visitedLocation);
-				return visitedLocation;
-			}, executorService)
-				.thenApplyAsync(visitedLocationRewarded -> {
-					logger.debug("Calculate rewards for user: {}", user.getUserId());
-					rewardsService.calculateRewards(user);
-					return visitedLocationRewarded;
-				}, executorService);
-		return visitedLocationCompletableFuture.get();
-	}*/
 
 	public List<Attraction> getNearByAttractions(VisitedLocation visitedLocation) {
 		List<Attraction> nearbyAttractions = new ArrayList<>();
