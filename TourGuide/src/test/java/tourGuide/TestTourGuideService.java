@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.util.List;
+import java.util.Locale;
+import java.util.TreeMap;
 import java.util.UUID;
 import java.util.concurrent.ExecutionException;
 
@@ -24,6 +26,7 @@ public class TestTourGuideService {
 
 	@Test
 	public void getUserLocation() throws ExecutionException, InterruptedException {
+		Locale.setDefault(Locale.US);
 		GpsUtil gpsUtil = new GpsUtil();
 		RewardsService rewardsService = new RewardsService(gpsUtil, new RewardCentral());
 		InternalTestHelper.setInternalUserNumber(0);
@@ -80,6 +83,7 @@ public class TestTourGuideService {
 	
 	@Test
 	public void trackUser() {
+		Locale.setDefault(Locale.US);
 		GpsUtil gpsUtil = new GpsUtil();
 		RewardsService rewardsService = new RewardsService(gpsUtil, new RewardCentral());
 		InternalTestHelper.setInternalUserNumber(0);
@@ -100,9 +104,10 @@ public class TestTourGuideService {
 		assertEquals(user.getUserId(), visitedLocation.userId);
 	}
 	
-	@Ignore // Not yet implemented
+
 	@Test
 	public void getNearbyAttractions() {
+		Locale.setDefault(Locale.US);
 		GpsUtil gpsUtil = new GpsUtil();
 		RewardsService rewardsService = new RewardsService(gpsUtil, new RewardCentral());
 		InternalTestHelper.setInternalUserNumber(0);
@@ -118,7 +123,8 @@ public class TestTourGuideService {
 			throw new RuntimeException(e);
 		}
 
-		List<Attraction> attractions = tourGuideService.getNearByAttractions(visitedLocation);
+		//List<Attraction> attractions = tourGuideService.getNearByAttractions(visitedLocation);
+		TreeMap<Double, Attraction> attractions = tourGuideService.getNearByAttractions(visitedLocation);
 		
 		tourGuideService.tracker.stopTracking();
 		
