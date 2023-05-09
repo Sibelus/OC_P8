@@ -87,11 +87,11 @@ public class TourGuideService {
 					logger.debug("Add visited location to user: {}", user.getUserId());
 					return visitedLocation;
 				}, executorService)
-				.thenApplyAsync(visitedLocationRewarded -> {
+				.thenApply(visitedLocationRewarded -> {
 					rewardsService.calculateRewards(user);
 					logger.debug("Calculate rewards for user: {}", user.getUserId());
 					return visitedLocationRewarded;
-				}, executorService);
+				});
 	}
 
 
