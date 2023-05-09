@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tourGuide.TestRewardsService" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-05-09T08:06:09" hostname="AHO" time="14.494">
+  <properties/>
+  <testcase name="nearAllAttractions" classname="tourGuide.TestRewardsService" time="13.727"/>
+  <testcase name="userGetRewards" classname="tourGuide.TestRewardsService" time="0.755"/>
+  <testcase name="isWithinAttractionProximity" classname="tourGuide.TestRewardsService" time="0.012"/>
+  <system-out><![CDATA[10:06:10.048 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+10:06:10.053 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+10:06:10.105 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 1 internal test users.
+10:06:10.105 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+10:06:10.123 [pool-3-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+10:06:10.126 [pool-3-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+10:06:10.127 [pool-3-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+10:06:10.605 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Disneyland
+10:06:10.692 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Jackson Hole
+10:06:11.637 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Mojave National Preserve
+10:06:12.465 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Joshua Tree National Park
+10:06:12.666 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Buffalo National River
+10:06:13.655 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Hot Springs National Park
+10:06:14.266 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Kartchner Caverns State Park
+10:06:14.471 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Legend Valley
+10:06:15.016 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Flowers Bakery of London
+10:06:15.318 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting McKinley Tower
+10:06:16.295 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Flatiron Building
+10:06:16.558 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Fallingwater
+10:06:16.600 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Union Station
+10:06:17.363 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Roger Dean Stadium
+10:06:17.426 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Texas Memorial Stadium
+10:06:17.962 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Bryant-Denny Stadium
+10:06:18.414 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Tiger Stadium
+10:06:19.007 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Neyland Stadium
+10:06:19.533 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Kyle Field
+10:06:20.361 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting San Diego Zoo
+10:06:21.123 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Zoo Tampa at Lowry Park
+10:06:21.447 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Franklin Park Zoo
+10:06:22.362 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting El Paso Zoo
+10:06:22.882 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Kansas City Zoo
+10:06:23.623 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Bronx Zoo
+10:06:23.699 [pool-1-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Cinderella Castle
+10:06:23.710 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+10:06:23.710 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+10:06:23.710 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 1 internal test users.
+10:06:23.710 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+10:06:23.711 [pool-6-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+10:06:23.712 [pool-6-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+10:06:23.712 [pool-6-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+10:06:24.465 [pool-4-thread-1] DEBUG tourGuide.service.RewardsService - User received reward for visiting Disneyland
+1
+]]></system-out>
+  <system-err><![CDATA[mai 09, 2023 10:06:10 AM org.javamoney.moneta.DefaultMonetaryContextFactory createMonetaryContextNonNullConfig
+INFOS: Using custom MathContext: precision=256, roundingMode=HALF_EVEN
+]]></system-err>
+</testsuite>
