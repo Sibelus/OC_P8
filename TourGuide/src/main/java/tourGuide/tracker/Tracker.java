@@ -1,6 +1,7 @@
 package tourGuide.tracker;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -17,7 +18,6 @@ public class Tracker extends Thread {
 	private Logger logger = LoggerFactory.getLogger(Tracker.class);
 	private static final long trackingPollingInterval = TimeUnit.MINUTES.toSeconds(5);
 	private final ExecutorService executorService = Executors.newSingleThreadExecutor();
-	//private final ExecutorService executorService = Executors.newFixedThreadPool(100);
 	private final TourGuideService tourGuideService;
 	private boolean stop = false;
 
@@ -37,6 +37,7 @@ public class Tracker extends Thread {
 	
 	@Override
 	public void run() {
+		Locale.setDefault(Locale.US);
 		StopWatch stopWatch = new StopWatch();
 		while(true) {
 			if(Thread.currentThread().isInterrupted() || stop) {
@@ -67,9 +68,5 @@ public class Tracker extends Thread {
 			}
 		}
 		
-	}
-
-	public ExecutorService getExecutorService() {
-		return executorService;
 	}
 }
