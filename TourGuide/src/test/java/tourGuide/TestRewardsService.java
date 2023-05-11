@@ -28,6 +28,7 @@ public class TestRewardsService {
 		RewardsService rewardsService = new RewardsService(gpsUtil, new RewardCentral());
 		TourGuideService tourGuideService = new TourGuideService(gpsUtil, rewardsService);
 		InternalTestHelper.setInternalUserNumber(1);
+		rewardsService.setProximityBuffer(10);
 		
 		User user = new User(UUID.randomUUID(), "jon", "000", "jon@tourGuide.com");
 		Attraction attraction = gpsUtil.getAttractions().get(0);
@@ -62,7 +63,7 @@ public class TestRewardsService {
 		assertTrue(rewardsService.isWithinAttractionProximity(attraction, attraction));
 	}
 	
-	//@Ignore // Needs fixed - can throw ConcurrentModificationException
+
 	@Test
 	public void nearAllAttractions() {
 		GpsUtil gpsUtil = new GpsUtil();
