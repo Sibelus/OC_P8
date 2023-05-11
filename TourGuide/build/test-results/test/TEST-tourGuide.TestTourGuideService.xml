@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tourGuide.TestTourGuideService" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-05-10T09:04:32" hostname="AHO" time="0.246">
+  <properties/>
+  <testcase name="getUserLocation" classname="tourGuide.TestTourGuideService" time="0.096"/>
+  <testcase name="addUser" classname="tourGuide.TestTourGuideService" time="0.0"/>
+  <testcase name="getAllUsers" classname="tourGuide.TestTourGuideService" time="0.001"/>
+  <testcase name="trackUser" classname="tourGuide.TestTourGuideService" time="0.042"/>
+  <testcase name="getNearbyAttractions" classname="tourGuide.TestTourGuideService" time="0.107"/>
+  <system-out><![CDATA[11:04:32.687 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+11:04:32.687 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+11:04:32.688 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
+11:04:32.688 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+11:04:32.688 [pool-16-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
+11:04:32.688 [pool-16-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+11:04:32.688 [pool-16-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+11:04:32.701 [pool-1-thread-57] DEBUG tourGuide.service.RewardsService - User received reward for visiting Bryant-Denny Stadium
+11:04:32.710 [pool-1-thread-29] DEBUG tourGuide.service.RewardsService - User received reward for visiting Flowers Bakery of London
+11:04:32.725 [pool-1-thread-48] DEBUG tourGuide.service.RewardsService - User received reward for visiting Joshua Tree National Park
+11:04:32.727 [pool-1-thread-40] DEBUG tourGuide.service.RewardsService - User received reward for visiting El Paso Zoo
+11:04:32.742 [pool-1-thread-84] DEBUG tourGuide.service.RewardsService - User received reward for visiting Cinderella Castle
+11:04:32.743 [pool-1-thread-16] DEBUG tourGuide.service.RewardsService - User received reward for visiting Kyle Field
+11:04:32.744 [pool-1-thread-19] DEBUG tourGuide.service.RewardsService - User received reward for visiting Flowers Bakery of London
+11:04:32.761 [pool-1-thread-90] DEBUG tourGuide.service.RewardsService - User received reward for visiting Cinderella Castle
+11:04:32.762 [pool-1-thread-86] DEBUG tourGuide.service.RewardsService - User received reward for visiting Texas Memorial Stadium
+11:04:32.773 [pool-1-thread-6] DEBUG tourGuide.service.RewardsService - User received reward for visiting Franklin Park Zoo
+11:04:32.783 [pool-15-thread-1] DEBUG tourGuide.service.TourGuideService - Get location of user: b9789b0c-d360-4076-b477-199b8e06ba75
+11:04:32.783 [pool-15-thread-1] DEBUG tourGuide.service.TourGuideService - Add visited location to user: b9789b0c-d360-4076-b477-199b8e06ba75
+11:04:32.783 [pool-15-thread-1] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: b9789b0c-d360-4076-b477-199b8e06ba75
+11:04:32.783 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+11:04:32.783 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+11:04:32.783 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
+11:04:32.783 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+11:04:32.783 [pool-19-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker stopping
+11:04:32.784 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+11:04:32.784 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+11:04:32.784 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
+11:04:32.784 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+11:04:32.784 [pool-22-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker stopping
+11:04:32.784 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+11:04:32.784 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+11:04:32.784 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
+11:04:32.784 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+11:04:32.784 [pool-25-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
+11:04:32.784 [pool-25-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+11:04:32.784 [pool-25-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+11:04:32.788 [pool-1-thread-85] DEBUG tourGuide.service.RewardsService - User received reward for visiting Union Station
+11:04:32.790 [pool-1-thread-64] DEBUG tourGuide.service.RewardsService - User received reward for visiting Cinderella Castle
+11:04:32.792 [pool-1-thread-78] DEBUG tourGuide.service.RewardsService - User received reward for visiting Union Station
+11:04:32.794 [pool-1-thread-89] DEBUG tourGuide.service.RewardsService - User received reward for visiting Kartchner Caverns State Park
+11:04:32.794 [pool-1-thread-71] DEBUG tourGuide.service.RewardsService - User received reward for visiting Buffalo National River
+11:04:32.795 [pool-1-thread-43] DEBUG tourGuide.service.RewardsService - User received reward for visiting Legend Valley
+11:04:32.807 [pool-1-thread-41] DEBUG tourGuide.service.RewardsService - User received reward for visiting San Diego Zoo
+11:04:32.811 [pool-1-thread-87] DEBUG tourGuide.service.RewardsService - User received reward for visiting Union Station
+11:04:32.814 [pool-1-thread-100] DEBUG tourGuide.service.RewardsService - User received reward for visiting McKinley Tower
+11:04:32.815 [pool-1-thread-58] DEBUG tourGuide.service.RewardsService - User received reward for visiting El Paso Zoo
+11:04:32.816 [pool-1-thread-37] DEBUG tourGuide.service.RewardsService - User received reward for visiting Legend Valley
+11:04:32.818 [pool-1-thread-63] DEBUG tourGuide.service.RewardsService - User received reward for visiting Kyle Field
+11:04:32.818 [pool-1-thread-67] DEBUG tourGuide.service.RewardsService - User received reward for visiting Jackson Hole
+11:04:32.818 [pool-1-thread-15] DEBUG tourGuide.service.RewardsService - User received reward for visiting Fallingwater
+11:04:32.826 [pool-24-thread-1] DEBUG tourGuide.service.TourGuideService - Get location of user: 193ddc5e-8ffa-48de-8e60-f821eeda651a
+11:04:32.826 [pool-24-thread-1] DEBUG tourGuide.service.TourGuideService - Add visited location to user: 193ddc5e-8ffa-48de-8e60-f821eeda651a
+11:04:32.826 [pool-24-thread-1] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: 193ddc5e-8ffa-48de-8e60-f821eeda651a
+11:04:32.826 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+11:04:32.826 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+11:04:32.826 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
+11:04:32.826 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+11:04:32.826 [pool-28-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
+11:04:32.826 [pool-28-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+11:04:32.826 [pool-28-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+11:04:32.832 [pool-1-thread-47] DEBUG tourGuide.service.RewardsService - User received reward for visiting Bryant-Denny Stadium
+11:04:32.843 [pool-1-thread-91] DEBUG tourGuide.service.RewardsService - User received reward for visiting Flatiron Building
+11:04:32.852 [pool-1-thread-76] DEBUG tourGuide.service.RewardsService - User received reward for visiting Buffalo National River
+11:04:32.853 [pool-1-thread-64] DEBUG tourGuide.service.RewardsService - User received reward for visiting Disneyland
+11:04:32.856 [pool-1-thread-55] DEBUG tourGuide.service.RewardsService - User received reward for visiting Jackson Hole
+11:04:32.861 [pool-1-thread-66] DEBUG tourGuide.service.RewardsService - User received reward for visiting Jackson Hole
+11:04:32.861 [pool-1-thread-86] DEBUG tourGuide.service.RewardsService - User received reward for visiting Tiger Stadium
+11:04:32.870 [pool-1-thread-77] DEBUG tourGuide.service.RewardsService - User received reward for visiting Mojave National Preserve
+11:04:32.876 [pool-1-thread-17] DEBUG tourGuide.service.RewardsService - User received reward for visiting Bryant-Denny Stadium
+11:04:32.877 [pool-1-thread-94] DEBUG tourGuide.service.RewardsService - User received reward for visiting Bryant-Denny Stadium
+11:04:32.879 [pool-1-thread-68] DEBUG tourGuide.service.RewardsService - User received reward for visiting Franklin Park Zoo
+11:04:32.880 [pool-1-thread-51] DEBUG tourGuide.service.RewardsService - User received reward for visiting Texas Memorial Stadium
+11:04:32.882 [pool-1-thread-20] DEBUG tourGuide.service.RewardsService - User received reward for visiting San Diego Zoo
+11:04:32.886 [pool-1-thread-69] DEBUG tourGuide.service.RewardsService - User received reward for visiting Hot Springs National Park
+11:04:32.888 [pool-1-thread-24] DEBUG tourGuide.service.RewardsService - User received reward for visiting Neyland Stadium
+11:04:32.889 [pool-1-thread-65] DEBUG tourGuide.service.RewardsService - User received reward for visiting Jackson Hole
+11:04:32.907 [pool-1-thread-97] DEBUG tourGuide.service.RewardsService - User received reward for visiting Disneyland
+11:04:32.907 [pool-1-thread-11] DEBUG tourGuide.service.RewardsService - User received reward for visiting Tiger Stadium
+11:04:32.910 [pool-1-thread-66] DEBUG tourGuide.service.RewardsService - User received reward for visiting Buffalo National River
+11:04:32.917 [pool-1-thread-62] DEBUG tourGuide.service.RewardsService - User received reward for visiting Buffalo National River
+11:04:32.920 [pool-27-thread-1] DEBUG tourGuide.service.TourGuideService - Get location of user: cc9d967e-6fbb-4bc7-b161-65bc7887bb50
+11:04:32.920 [pool-27-thread-1] DEBUG tourGuide.service.TourGuideService - Add visited location to user: cc9d967e-6fbb-4bc7-b161-65bc7887bb50
+11:04:32.920 [pool-27-thread-1] DEBUG tourGuide.service.TourGuideService - Calculate rewards for user: cc9d967e-6fbb-4bc7-b161-65bc7887bb50
+11:04:32.923 [pool-1-thread-11] DEBUG tourGuide.service.RewardsService - User received reward for visiting Neyland Stadium
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,6 @@
+tourGuide
+tourGuide.helper
+tourGuide.model.DTO
+tourGuide.service
+tourGuide.tracker
+tourGuide.user
