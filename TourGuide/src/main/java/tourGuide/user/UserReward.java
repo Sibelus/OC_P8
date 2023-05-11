@@ -26,5 +26,14 @@ public class UserReward {
 	public int getRewardPoints() {
 		return rewardPoints;
 	}
-	
+
+
+	@Override
+	public String toString() {
+		return "UserReward{" +
+				"attraction=" + attraction.attractionName +
+				", visitedLocation= [longitude: " + visitedLocation.location.longitude + ", latitude: " + visitedLocation.location.latitude + "]" +
+				", rewardPoints=" + rewardPoints +
+				'}';
+	}
 }
